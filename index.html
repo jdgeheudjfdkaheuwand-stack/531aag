@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="GAMEHUB — каталог игр с удобным скачиванием.">
+<title>GAMEHUB — Игры</title><link rel="stylesheet" href="style.css">
+</head>
+<body data-page="home">
+<header class="site-header">
+<a class="brand" href="index.html"><span class="brand-mark">G</span><span>GAMEHUB</span></a>
+<nav class="main-nav"><a class="active" href="#games">Игры</a><a href="#apps">Приложения</a><a href="#about">О сайте</a></nav>
+<div class="header-actions" id="headerActions"><a class="btn btn-ghost" href="auth.html?mode=login">Войти</a><a class="btn btn-primary" href="auth.html?mode=register">Регистрация</a></div>
+<button class="menu-toggle" id="menuToggle" aria-label="Открыть меню">☰</button>
+</header>
+<main>
+<section class="hero"><div class="hero-copy"><span class="eyebrow">DIGITAL GAME CATALOG</span><h1>Игры, которые<br><span>хочется запустить.</span></h1><p>Открывай каталог, находи любимые игры и скачивай их по внешним ссылкам — быстро и удобно.</p><div class="hero-actions"><a class="btn btn-primary btn-large" href="#games">Смотреть игры <span>→</span></a><a class="btn btn-ghost btn-large" href="#about">О GAMEHUB</a></div></div><div class="hero-art" aria-hidden="true"><div class="orb orb-a"></div><div class="orb orb-b"></div><div class="hero-card"><span class="hero-card-tag">FEATURED</span><div class="hero-game-icon">G</div><div><strong>GAMEHUB</strong><small>Твоя игровая библиотека</small></div></div></div></section>
+<section class="catalog-section" id="games"><div class="section-heading"><div><span class="eyebrow">LIBRARY</span><h2>Игры</h2></div><div class="catalog-tools"><label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Поиск игр..." autocomplete="off"></label><div class="filters" id="categoryFilters"></div></div></div><div id="adTop"></div><div class="games-grid" id="gamesGrid"></div><div class="empty-state hidden" id="emptyState">Ничего не найдено. Попробуй другой запрос.</div><div id="adBottom"></div></section>
+<section class="info-section" id="apps"><div class="info-card"><span class="eyebrow">COMING SOON</span><h2>Приложения</h2><p>Раздел подготовлен для приложений. Каталог можно расширить через админ-панель.</p></div></section>
+<section class="info-section" id="about"><div class="info-card"><span class="eyebrow">ABOUT</span><h2>О GAMEHUB</h2><p>Статический каталог для GitHub Pages. Сами файлы игр не хранятся в репозитории: карточки содержат внешние ссылки на загрузку.</p></div></section>
+</main>
+<footer class="site-footer"><span>© <span id="year"></span> GAMEHUB</span><span>Static • GitHub Pages</span></footer>
+<div class="modal-backdrop hidden" id="downloadModal" role="dialog" aria-modal="true"><div class="modal"><button class="modal-close" id="downloadClose" aria-label="Закрыть">×</button><span class="eyebrow">DOWNLOAD</span><h2>Подготовка загрузки</h2><p id="downloadGameName"></p><div class="countdown" id="countdown">10</div><p class="modal-note" id="countdownText">Подождите немного — ссылка станет доступна автоматически.</p><button class="btn btn-primary btn-large hidden" id="downloadReady">Скачать игру <span>↓</span></button></div></div>
+<script src="js/app.js"></script>
+</body></html>
